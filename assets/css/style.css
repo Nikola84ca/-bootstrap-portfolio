@@ -1,1 +1,35 @@
-/* CSS goes here */
+/* This is the CSS to customize the Bootstrap components */
+
+
+/* This is the CSS to modify the Nav bar */
+ul .justifyContentend {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* This is the CSS to modify the Hero Banner */
+
+#herocodeImage {
+
+    background-image: url(../images/binary-code-background.gif);
+}
+
+/* This is the CSS to modify the Work section */
+
+
+
+
+/* This is the CSS to modify the Hero About Me section */
+
+
+
+
+/* This is the CSS to modify the Hero Skills section */
+
+
+
+
+/* This is the CSS to modify the Contact */
+
+
+

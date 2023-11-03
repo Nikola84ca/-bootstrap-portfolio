@@ -6,10 +6,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <!-- This is the link the html to bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">  
     <title>Nicola Sedda || Front End Developer</title>
 </head>
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">NICOLA'S PORTFOLIO</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <!-- This list is moved to the right end of the screen with the added class justifyContentend -->
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll justifyContentend" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Work
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Horiseon</a></li>
+                      <li><a class="dropdown-item" href="#">Old Portfolio Site</a></li>
+                      <li><a class="dropdown-item" href="#">Student Guide</a></li>
+                      <li><a class="dropdown-item" href="#">Run Buddy</a></li>
+                      <li><a class="dropdown-item" href="#">Save The Dinos</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contacts</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Resume</a>
+                  </li>
+                  
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <!-- This is the hero banner with the coding animation and the cool motto, it sits between the navigation bar and the work section -->
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container" id="herocodeImage">
+              <h1 class="display-4">CODING TO MAKE A DIFFERENCE!</h1>
+            </div>
+          </div>
+        <!-- Here is the work section, I implemented cards and a wireframe strucutre to make them responsive -->
+
+        <section class="works">
+            <div id="workTitle">
+                <h3>Work</h3>
+            </div>
+            <article class="workCards">
+                <div id="topProject">
+                    <div class="card bg-dark text-white">
+                        <img src="assets/images/01-horiseon.jpg" class="card-img" alt="Picture of the Horiseon Website">
+                        <div class="card-img-overlay">
+                          <h5 class="card-title">Horiseon Project</h5>
+                          <p class="card-text">Accessibility and SEO optimization</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Special title treatment</h5>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Special title treatment</h5>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Special title treatment</h5>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Special title treatment</h5>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+            </article>
+
+        </section>
+
+        <!-- Here is the About Me section -->
+
+        <section class="aboutMe">
+            <div class="container">
+                <h3 id="aboutTitle">About Me</h3>
+                <img src="assets/images/nicopic.JPG" alt="Picture of Nicola">
+                <p id="aboutText">
+                    Born and raised in Italy, I moved to the UK in 2015. I have always been interested in new technologies and IT, as I studied IT in my A levels back in Italy. After 5 years working in content management for a website, I decided to make the step of learning Front-End Development thanks to the edX course, and on this page I want to showcase not only my progress as a student but also a journey that hopefully will lead to new exciting projects in this field.
+                </p>
+            </div>
+        </section>
+
+    </main>
     
     <!-- These are the additional JavaScript links for bootstraps -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
