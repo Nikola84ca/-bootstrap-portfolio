@@ -12,61 +12,59 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary customNav">
+            <div class="container-fluid content">
               <a class="navbar-brand" href="#">NICOLA'S PORTFOLIO</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarScroll">
-                <!-- This list is moved to the right end of the screen with the added class justifyContentend -->
-                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll justifyContentend" style="--bs-scroll-height: 100px;">
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Work
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Horiseon</a></li>
-                      <li><a class="dropdown-item" href="#">Old Portfolio Site</a></li>
-                      <li><a class="dropdown-item" href="#">Student Guide</a></li>
-                      <li><a class="dropdown-item" href="#">Run Buddy</a></li>
-                      <li><a class="dropdown-item" href="#">Save The Dinos</a></li>
-                    </ul>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          WORK
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Horiseon</a></li>
+                          <li><a class="dropdown-item" href="#">Old Portfolio Site</a></li>
+                          <li><a class="dropdown-item" href="#">Student Guide</a></li>
+                          <li><a class="dropdown-item" href="#">Run Buddy</a></li>
+                          <li><a class="dropdown-item" href="#">Save The Dinos</a></li>
+                        </ul>
+                      </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">ABOUT</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">About</a>
+                    <a class="nav-link" href="#">SKILLS</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Skills</a>
+                    <a class="nav-link" href="#">CONTACTS</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contacts</a>
+                    <a class="nav-link" href="#">RESUME</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Resume</a>
-                  </li>
-                  
-                  
-                </ul>
+                  </ul>
               </div>
             </div>
           </nav>
     </header>
     <main>
         <!-- This is the hero banner with the coding animation and the cool motto, it sits between the navigation bar and the work section -->
-
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container" id="herocodeImage">
-              <h1 class="display-4">CODING TO MAKE A DIFFERENCE!</h1>
+        <div class="p-5 mb-4 bg-body-tertiary rounded-3 rockBackground">
+            <div class="container-fluid py-5 jumboCopy">
+              <h1 class="display-5 fw-bold">CODING TO MAKE A DIFFERENCE!</h1>
+              
             </div>
           </div>
+        
         <!-- Here is the work section, I implemented cards and a wireframe strucutre to make them responsive -->
 
         <section class="works">
             <div id="workTitle">
                 <h3>Work</h3>
             </div>
-            <article class="workCards">
+            <article class="container workCards">
                 <div id="topProject">
                     <div class="card bg-dark text-white">
                         <img src="assets/images/01-horiseon.jpg" class="card-img" alt="Picture of the Horiseon Website">
@@ -123,15 +121,83 @@
 
         <!-- Here is the About Me section -->
 
-        <section class="aboutMe">
-            <div class="container">
-                <h3 id="aboutTitle">About Me</h3>
-                <img src="assets/images/nicopic.JPG" alt="Picture of Nicola">
-                <p id="aboutText">
-                    Born and raised in Italy, I moved to the UK in 2015. I have always been interested in new technologies and IT, as I studied IT in my A levels back in Italy. After 5 years working in content management for a website, I decided to make the step of learning Front-End Development thanks to the edX course, and on this page I want to showcase not only my progress as a student but also a journey that hopefully will lead to new exciting projects in this field.
-                </p>
-            </div>
+        <section class="container skills">
+            <h3 id="aboutTitle">About Me</h3>
+            <img class="col-sm-3" src="assets/images/nicopic.JPG" alt="Picture of Nicola">
+            <p id="aboutText">
+                Born and raised in Italy, I moved to the UK in 2015. I have always been interested in new technologies and IT, as I studied IT in my A levels back in Italy. After 5 years working in content management for a website, I decided to make the step of learning Front-End Development thanks to the edX course, and on this page I want to showcase not only my progress as a student but also a journey that hopefully will lead to new exciting projects in this field.
         </section>
+
+        <!-- Here is the Skills section -->
+
+
+        <section class="container skills">
+            <h3 id="skillsTitle">Skills</h3>
+            <p id="skillsText">Duright the course of the edX bootcamp in Front End Development I had the chance to learn fundamental skills that make me love working in this field. Team working and self starting experience widened my learning opportunity, getting a more indepth grasp of what a Front End Developer and his team share ideas and work on a project. Among the skills and tools I am learning, here are some of the most important</p>
+            <ul id="skillsList">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Git</li>
+                <li>VSC</li>
+                <li>Zoom</li>
+            </ul>
+        </section>
+
+        <!-- Here is the Contacts section -->
+
+
+        <section class="contact-section bg-black" id="contact">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <i></i>
+                      <h4 class="text-uppercase">ADDRESS</h4>
+                      <p>43523 Market Street, Sacramento, CA</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <i></i>
+                      <h4 class="text-uppercase">EMAIL</h4>
+                      <a href = "mailto: hello@california.com">hello@california.com</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <i></i>
+                      <h4 class="text-uppercase">PHONE</h4>
+                      <p>518001 CALIFORNIA</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="social">
+                  <a href="">
+                    <i></i>
+                  </a>
+                  <a href="">
+                    <i></i>
+                  </a>
+                  <a href="">
+                    <i></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        <!-- Here is the Footer section -->
+
+        <footer>
+            <div class="container">
+              <p>Copyright Nicola S. 2023</p>
+            </div>
+          </footer>
 
     </main>
     

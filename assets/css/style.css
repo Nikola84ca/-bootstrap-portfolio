@@ -2,15 +2,75 @@
 
 
 /* This is the CSS to modify the Nav bar */
-ul .justifyContentend {
-    display: flex;
-    justify-content: flex-end;
-}
+/* Navigation bar */
+
+/* General */
+.customNav {
+    position: fixed;
+    width: 100%;
+    background-color: rgb(27, 26, 26);
+    background-size: cover;
+    z-index: 10;
+  }
+  .navbar-nav {
+    margin-left: auto;
+    margin-right: 0 !important;
+  }
+  .navbar-brand {
+    margin-left: 10px;
+  
+  }
+  .nav-item {
+    margin: 0px 15px;
+  }
+
+  
+
+  /* Navigation dropdown menu */
+  .dropdown-menu {
+  
+    background-color: grey;
+    background-size: cover;
+  }
+  .dropdown-item:focus, .dropdown-item:hover {
+      color: #16181b;
+      text-decoration: none;
+      background: black;
+  }
+  
+  /* Navigation links */
+  .customNav a {
+    color: rgb(53, 51, 51) !important;
+  }
+  .navCTA {
+    font-size: 15px;
+  }
 
 /* This is the CSS to modify the Hero Banner */
 
-#herocodeImage {
+/* Jumbotron  */
+.rockBackground {
+    background-image: url(../images/binary-code-background.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(70vh - 25px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
+  
+  /* Jumbotron copy */
+  .jumboCopy {
+    width: 70%;
+    min-width: 500px;
+    max-width: 700px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+  }
+#herocodeImage {
+    
     background-image: url(../images/binary-code-background.gif);
 }
 
@@ -26,6 +86,10 @@ ul .justifyContentend {
 
 /* This is the CSS to modify the Hero Skills section */
 
+
+.skills img {
+    width: 150px;
+}
 
 
 
