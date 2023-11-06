@@ -25,26 +25,28 @@
                           WORK
                         </a>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">All Projects</a></li>
+                          <li><a class="dropdown-item" href="#workTitle">All Projects</a></li>
                           <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Horiseon</a></li>
-                          <li><a class="dropdown-item" href="#">Old Portfolio Site</a></li>
-                          <li><a class="dropdown-item" href="#">Student Guide</a></li>
-                          <li><a class="dropdown-item" href="#">Run Buddy</a></li>
-                          <li><a class="dropdown-item" href="#">Save The Dinos</a></li>
+                          <li><a class="dropdown-item" href="#project1">Horiseon</a></li>
+                          <li><a class="dropdown-item" href="#project2">First Portfolio Site</a></li>
+                          <li><a class="dropdown-item" href="#project3">Student Guide</a></li>
+                          <li><a class="dropdown-item" href="#project4">Run Buddy</a></li>
+                          <li><a class="dropdown-item" href="#project5">Save The Dinos</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="https://github.com/Nikola84ca">GitHub Profile</a></li>
                         </ul>
                       </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">ABOUT</a>
+                    <a class="nav-link active" aria-current="page" href="#aboutTitle">ABOUT</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">SKILLS</a>
+                    <a class="nav-link" href="#skillsTitle">SKILLS</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">CONTACTS</a>
+                    <a class="nav-link" href="#contactsTitle">CONTACTS</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">RESUME</a>
+                    <a class="nav-link" href="https://www.linkedin.com/in/nicola-sedda-885717298">RESUME</a>
                   </li>
                   </ul>
               </div>
@@ -62,64 +64,73 @@
         
         <!-- Here is the work section, I implemented cards and a wireframe strucutre to make them responsive -->
 
-        <section class="works">
-            <div id="workTitle">
-                <h3>Work</h3>
-            </div>
+        <section class="container-fluid works">
             <article class="container workCards">
+                <div id="workTitle">
+                    <h3>Work</h3>
                 <div id="topProject">
-                    <div class="card bg-dark text-white">
-                        <img src="assets/images/01-horiseon.jpg" class="card-img" alt="Picture of the Horiseon Website">
-                        <div class="card-img-overlay">
-                          <h5 class="card-title">Horiseon Project</h5>
-                          <p class="card-text">Accessibility and SEO optimization</p>
+                    <div class="row">
+                        <div class="col-sm-12" id="project1">
+                          <div class="card">
+                            <div class="card-body">
+                            <img src="assets/images/01-horiseon.jpg" class="card-img" alt="Picture of the Horiseon Website">
+                              <h5 class="card-title">Horiseon Project</h5>
+                              <p class="card-text">Accessibility and SEO optimization.</p>
+                              <a href="#" class="btn btn-primary">Visit Website</a>
+                            </div>
+                          </div>
                         </div>
                     </div>
-                </div>
                 <div class="row">
                     <div class="col-sm-6">
-                      <div class="card">
+                      <div class="card" id="project2">
                         <div class="card-body">
-                          <h5 class="card-title">Special title treatment</h5>
-                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <img src="assets/images/02-old-portfolio.JPG" class="card-img-top" alt="image of old portfolio website">
+                          <h5 class="card-title">First Portfolio Website</h5>
+                          <p class="card-text">First Portfolio Site With FlexBoxes</p>
+                          <a href="#" class="btn btn-primary">Visit Website</a>
                         </div>
                       </div>
                     </div>
                     <div class="col-sm-6">
-                      <div class="card">
+                      <div class="card" id="project3">
                         <div class="card-body">
-                          <h5 class="card-title">Special title treatment</h5>
-                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <img src="assets/images/03-student-guide.jpg" class="card-img-top" alt="image of student guide project">
+                          <h5 class="card-title">Student Guide</h5>
+                          <p class="card-text">HTML and CSS Student Guide</p>
+                          <a href="#" class="btn btn-primary">Visit Website</a>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-sm-6">
-                      <div class="card">
+                      <div class="card" id="project4">
                         <div class="card-body">
-                          <h5 class="card-title">Special title treatment</h5>
-                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <img src="assets/images/04-run-buddy.jpg" class="card-img-top" alt="image of run buddy project">
+                          <h5 class="card-title" id="runTitle">Run Buddy</h5>
+                          <p class="card-text">Sport Application Site.</p>
+                          <a href="#" class="btn btn-primary">Visit Website</a>
                         </div>
                       </div>
                     </div>
                     <div class="col-sm-6">
-                      <div class="card">
+                      <div class="card" id="project5">
                         <div class="card-body">
-                          <h5 class="card-title">Special title treatment</h5>
-                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <img src="assets/images/05-save-the-dinos.jpg" class="card-img-top" alt="image of save the dinos project">
+                          <h5 class="card-title">Save The Dinos</h5>
+                          <p class="card-text">Save The Dinos Association.</p>
+                          <a href="#" class="btn btn-primary">Visit Website</a>
                         </div>
                       </div>
                     </div>
                   </div>
 
             </article>
+            
 
         </section>
+              
 
         <!-- Here is the About Me section -->
 
@@ -135,62 +146,34 @@
 
         <section class="container skills">
             <h3 id="skillsTitle">Skills</h3>
-            <p id="skillsText">Duright the course of the edX bootcamp in Front End Development I had the chance to learn fundamental skills that make me love working in this field. Team working and self starting experience widened my learning opportunity, getting a more indepth grasp of what a Front End Developer and his team share ideas and work on a project. Among the skills and tools I am learning, here are some of the most important</p>
-            <p id="skillsList"> HTML - CSS - Git - VSC - Zoom</p>
+            <p id="skillsText">Duright the course of the edX bootcamp in Front End Development I had the chance to learn fundamental skills that make me love working in this field. Team working and self starting experience widened my learning opportunity, getting a more indepth grasp of what a Front End Developer and his team share ideas and work on a project. Among the skills and tools I am learning, here are some of the most important so far:</p>
+            <p id="skillsList"> HTML - CSS - Git - VSC - Bootstrap - Zoom</p>
         </section>
 
         <!-- Here is the Contacts section -->
 
 
-        <section class="contact-section bg-black" id="contact">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="card">
-                    <div class="card-body">
-                      <i></i>
-                      <h4 class="text-uppercase">ADDRESS</h4>
-                      <p>43523 Market Street, Sacramento, CA</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <div class="card-body">
-                      <i></i>
-                      <h4 class="text-uppercase">EMAIL</h4>
-                      <a href = "mailto: hello@california.com">hello@california.com</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <div class="card-body">
-                      <i></i>
-                      <h4 class="text-uppercase">PHONE</h4>
-                      <p>518001 CALIFORNIA</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="social">
-                  <a href="">
-                    <i></i>
-                  </a>
-                  <a href="">
-                    <i></i>
-                  </a>
-                  <a href="">
-                    <i></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </section>
 
         <!-- Here is the Footer section -->
 
         <footer>
             <div class="container">
+                <h3 id="contactsTitle">Contacts</h3>
+            <p id="contactsText">Feel free to contact me to know more!</p>
+                <ul class="nav nav-pills nav-justified">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Phone: +44074734734</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mailto: mailto:nico@websitewow.com">Email</a>
+                    </li>  
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://github.com/Nikola84ca">GitHubk</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://www.linkedin.com/in/nicola-sedda-885717298">Linkedin</a>
+                    </li>
+                </ul>
               <p>Copyright Nicola S. 2023</p>
             </div>
           </footer>
