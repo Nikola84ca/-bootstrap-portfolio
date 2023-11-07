@@ -34,10 +34,8 @@
 
   .dropdown-item:focus, .dropdown-item:hover {
     background-color: rgb(182, 180, 180);
-
-      color: rgb(253, 251, 251);
-      text-decoration: none;
-      
+    color: rgb(253, 251, 251);
+    text-decoration: none;
       
   }
   
@@ -71,7 +69,7 @@
     background:linear-gradient(0deg, rgba(134, 94, 118, 0.3), rgba(85, 80, 83, 0.3));
   }
 
-/* This is the CSS to modify the Work section */
+/* This is the CSS to modify the Work section starting from the title h3 to the cards margins and hover effects */
 
 .workTitle h3{
   display: flex;
@@ -106,6 +104,7 @@
     align-items: flex-end;
 }
 
+/* This styles the buttons of the cards */
 .btn-primary {
     --bs-btn-color: #fff;
     --bs-btn-bg: #676d75;
@@ -149,21 +148,19 @@
 
 #skillsList {
     font-weight: bold;
-    text-align: center;
-    
+    text-align: center;   
 }
 
-
+/* This section is dedicated to the CSS that styles the footer which contains the Contacts links bar */
 
 footer {
-        margin: auto;
-        width: 100%; 
-        padding: 50px;
-        font-family: sans-serif; 
-        color: rgb(253, 250, 250);  
-        background-color: #54595c;  
-           
-    text-align: center;
+  margin: auto;
+  width: 100%; 
+  padding: 50px;
+  font-family: sans-serif; 
+  color: rgb(253, 250, 250);  
+  background-color: #54595c;  
+  text-align: center;
 }
 
 footer p {
@@ -179,7 +176,6 @@ h3 .works{
     display: flex;
     color: #42464d;
     border-left: #36393d;
-    
 }
 
 
@@ -187,7 +183,8 @@ h5 {
     margin-top: 15px;
     margin-bottom: 15px;
 }
- footer .nav-link {
+ 
+footer .nav-link {
     display: block;
     color: #e9e9e9;
     text-decoration: none;
