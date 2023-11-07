@@ -35,17 +35,18 @@ alternatively download the zip file in GitHub after pressing the Code button, un
 
 The website is a single page that consists of these elements, listed from top to bottom.
 
-* An Header where we find my name and includes three links pointing to specific sections of the page, and an external link.
+* An Header where we find my name and includes an improved navigation bar, with a structured list of links and dropdown menu links, pointing to specific sections of the page, and an external link.
 * A big background image, the hero banner with a specific headline.
+* A Work section, where I highlight the main project with a big picture, and four more project sit below. All picture of the project have a nice hover effect that remove the overlay color once hovering with the mouse. All project sections have a title, description and a call-to-action button that serves as a link to the specific webpage of the relative project.
 * An About Me section, containing a small picture of me and a short intro/bio.
-* A Work section, where I highlight the latest project with a big picture, and four more project sit below. All picture of the project have a nice hover effect that remove the overlay color once hovering with the mouse. All project sections have a title and description, and the title works as a link to the specific webpage of the relative project.
-* A simple Contact Me section with phone number, email, gitHub profile and website.
+* A Skills section where I explore my goals during this bootcamp and all the skills and tools I am learning.
+* An improved Contact Me section with phone number, email, gitHub profile and website.
 
-Here is an example of the functionality implemented in the header links; when clicked they direct the user to the relative section of the main article.
+Here is a gif animation of the final result, you can compare it with the previous portfolio website by clicking [HERE](https://nikola84ca.github.io/my-portfolio/).
 
-![Gif animation of the header links, when clicked they will redirect the user to the relative sections of the webpage](/css/readme-assets/portfolio-desktop-view.gif)
+![Gif animation of the header links, when clicked they will redirect the user to the relative sections of the webpage](/assets/images/01-portfolio-website-view.gif)
 
-As you can see, the titles of the section occupy the 20% at the right of the screen, leaving the remaining space for the content.
+As you can see, I reorganized the content putting the most important assets, my projects, right after the hero banner jumbotron, and organizing the contacts and skills after in a more tidy and structured way. The contact section now is more functional with a dedicated nav bar, buttons with overlay and shadow effects and a handy button to go back to the top of the page.
 
 ## My Process
 
