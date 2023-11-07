@@ -44,45 +44,156 @@ The website is a single page that consists of these elements, listed from top to
 
 Here is a gif animation of the final result, you can compare it with the previous portfolio website by clicking [HERE](https://nikola84ca.github.io/my-portfolio/).
 
-![Gif animation of the header links, when clicked they will redirect the user to the relative sections of the webpage](/assets/images/01-portfolio-website-view.gif)
+![Gif animation of the webpage](/assets/images/01-portfolio-website-view.gif)
 
 As you can see, I reorganized the content putting the most important assets, my projects, right after the hero banner jumbotron, and organizing the contacts and skills after in a more tidy and structured way. The contact section now is more functional with a dedicated nav bar, buttons with overlay and shadow effects and a handy button to go back to the top of the page.
 
 ## My Process
 
-* The first thing I did was designing a clear structure of containers to have a clear idea of how to organize all the content. I started creating a dinamic navigation bar, followed by a large section containing a background gif and an h2 for the headline "Coding to make a difference".
+* The first thing I did was designing a new, clearer structure of containers to have a clear idea of how to organize all the content. I started by analysing my previous portfolio, created with flex-boxes, and spotting all the possible improvement I could implement. The use of Bootstrap components has been fundamental to speed up the process and allow me to have a much more tidy, responsive and fast webpage. The first thing to do I did in the html file was to connect my project to Bootstrap through the relative html, Css and JavaScript links.
 
-* For each content section I opted for a flex structure, where a main section contains the relative title and another container which contains the picture and bio for the about me section, a structure of articles for the work section, and a simple link list for the contact section. This made it easy to assign a left border to those section, and make the design clear and tidy. 
+* Starting from the top of the page, the Header, I decided to opt for a much better nav bar, that can offer many more options, and a clearer and more interactive and intuitive approach to comply with the UI and UX guidelines. Here is an animation of the navigation menu at the top of the page and its functionality:
 
-Here is an example of the HTML structure and its Relative CSS styling code:
+![Gif animation of the header nav bar, when clicked they will redirect the user to the relative sections of the webpage and external links](/assets/images/02-portfolio-nav-menu.gif)
+
+For the work section I decided to include a dropdown menu, that serves as direct access to the specific project, and also a link to my GitHub profile. Here is a snippet of the HTML structure and its Relative CSS styling code for this nav bar:
 
 ```HTML
+<nav class="navbar navbar-expand-lg bg-body-tertiary customNav">
+    <div class="container-fluid content">
+        <a class="navbar-brand" href="#">NICOLA'S PORTFOLIO</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+              </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          WORK
+                        </a>
+                  <ul class="dropdown-menu">
+                 <li><a class="dropdown-item" href="#workTitle">All Projects</a></li>
+                 <li><hr class="dropdown-divider"></li>
+                 <li><a class="dropdown-item" href="#project1">Horiseon</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="https://github.com/Nikola84ca">GitHub Profile</a></li>
+              </ul>
+             </li>
+          <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#aboutTitle">ABOUT</a>
+             </li>
+         </ul>
+        </div>
+  </div>
+</nav>
 
 ```
+
+For this example I removed some of the links, but it is evident the Bootstrap structure of classes that allows me to identify, and style each component of the menu, from the dropdown button, to every single link and divider. Here is what I did with my custom CSS to override the Bootstrap predefined style.
 
 ```CSS
 
+.customNav {
+    position: fixed;
+    width: 100%;
+    background-color: rgb(128, 123, 123);
+    background-size: cover;
+    z-index: 10;
+    background:linear-gradient(0deg, rgba(134, 94, 118, 0.3), rgba(85, 80, 83, 0.3));
+    background-size:cover;
+  }
+  .navbar-nav {
+    margin-left: auto;
+    margin-right: 0 !important;
+  }
+  .navbar-brand {
+    margin-left: 10px;
+  
+  }
+  .nav-item {
+    margin: 0px 15px;
+  }
+
+  /* Navigation dropdown menu */
+  .dropdown-menu {
+    background-color: rgb(128, 123, 123)!important;
+    min-height:100%;
+    background-size: cover;
+  }
+
+  .dropdown-item:focus, .dropdown-item:hover {
+    background-color: rgb(182, 180, 180);
+
+      color: rgb(253, 251, 251);
+      text-decoration: none;   
+  }
+  
+  .navCTA {
+    font-size: 15px;
+  }
 
 ```
-* Another feature I implemented is the overlay color and hover effect with the mouse. 
 
-![Gif animation of the projects section, when passing the mouse on them the overlay color fades, and the background picture is fully visible.](/css/readme-assets/projects-hover-effect.gif)
+* As requested the new website should maintain some of the features of the previous project, so I decided to keep a similar structure of the work section, showing the main project in a bigger area, and the following four order in two smaller rows. Each project now has a bigger picture compare to the previous project, and a project title, description and a dedicated button to redirect to the specific website. I achieved this using cards, ordered with a grid structure. Just like the previous portfolio, every card has an overlay that fades once hovered with the mouse, and also a button with an hover effect, that changes colour of the background and text once pressed. Here is a gif showing this functionality:
 
+![Gif animation of the projects section, when passing the mouse on them the overlay color fades, and the background picture is fully visible, plus animation of the buttons.](/assets/images/03-portfolio-projects-cards-hover.gif)
 
-
-
-
-* I made sure that the website is responsive for mobile view, it still needs some fixing for tablets and other sizes screens but this is how the content is organized on mobile:
-
-![Gif animation of the mobile view of the website.](/css/readme-assets/portfolio-mobile-view.gif)
-
-The content is align in colums and all the functionality of links and hover effects are working. This is my CSS approach to achieve that, specifically on the projects section:
+This is how I achieved this result with CSS:
 
 ```CSS
 
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  opacity: 1;
+  transition: opacity 0.3s ease; /* This adds a transition for smooth visibility change */
+  pointer-events: none; /* Ensures the overlay doesn't interfere with mouse events */
+}
 
+.card:hover::before {
+  opacity: 0; /* When hovering, the overlay becomes transparent */
+}
+```
+
+* I moved the About Me section below the projects, and added also a Skills section including some of the skills I am learning during the Front End Development Course.
+
+* At the bottom of the page, where the footer sits I decided to implement a much more functional Contact section, that includes my email, phone number and other links. I also added a "Back to the Top of the page" button to make it easier for the users to go back to the top of the page. As specified in the requirements, I implemented all the links as buttons, with an overlay effect that changes when hovered, showing a shadow on the hovered button. Once clicked the button will change colour and the relative text will change as well. Here is a gif animation of the final result:
+
+![Gif animation of the Contacts nav bar at the bottom of the page.](/assets/images/04-portfolio-contacts-nav-menu.gif)
+
+This is the CSS I wrote to make the shadow effect during the hover of a speficic link:
+
+```CSS
+footer a:link, a:visited {
+  background-color: rgb(160, 159, 159);
+  color: black;
+  border: 1px solid rgb(62, 62, 65);
+  padding: 20px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+footer a:hover {
+  background-color: rgb(122, 122, 122);
+  color: rgb(255, 255, 255)!important;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
 
 ```
+
+
+* Lastly, I made sure that the website is much more responsive for mobile view compared to the previous project, the menu and dropmenu keep their functionality, as all the other bootstrap components. Here is a gif animation of the final result on mobile view:
+
+![Gif animation of the mobile view of the website.](/assets/images/05-portfolio-mobile-view.gif)
+
+The content is align in colums and all the functionality of links and hover effects are working. 
+
 
 ## Credits
 
